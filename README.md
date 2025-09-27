@@ -1,6 +1,6 @@
 # SkillSwap – Peer-to-Peer Learning Platform
 
-SkillSwap is a **peer-to-peer learning platform** that connects learners and mentors through personalized skill profiles and AI-driven matching. It enables real-time chat, progress tracking, and collaborative learning in an interactive environment.
+SkillSwap is a **peer-to-peer learning platform** that connects learners and mentors through personalized skill profiles and skills matching. It enables real-time chat, progress tracking, and collaborative learning in an interactive environment.
 
 This project was developed as part of my internship at **IIT Bombay EdTech Society**, where I focused on **Full Stack Web Development**. The aim was to create a responsive, scalable, and secure platform that addresses the gap in accessible, community-based learning.
 
@@ -8,10 +8,9 @@ This project was developed as part of my internship at **IIT Bombay EdTech Socie
 
 ## 🚀 Features
 
-* **AI-driven skill matching** between learners and mentors
+* **Skill matching** between learners and mentors
 * **Peer-to-peer teaching & learning** in a collaborative environment
 * **Real-time chat system** for seamless communication
-* **Progress tracking** to monitor skill development
 * **Responsive design** for mobile, tablet, and desktop
 * **Secure authentication & data storage** using Firebase
 
@@ -76,12 +75,6 @@ To deploy:
 ```bash
 firebase deploy
 ```
-
----
-
-## 📜 License
-
-This project is licensed under the **MIT License** – you are free to use, modify, and distribute it.
 
 ---
 
