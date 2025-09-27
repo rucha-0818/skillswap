@@ -1,0 +1,78 @@
+/* Background for the page */
+.login-page {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #2575fc, #6a11cb);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Form container card */
+.form-container {
+  width: 100%;
+  max-width: 420px;
+  background: #fff;
+  padding: 40px 30px;
+  border-radius: 15px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+/* Heading */
+.form-container h1 {
+  margin-bottom: 25px;
+  color: #333;
+  font-size: 1.8rem;
+}
+
+/* Inputs */
+.login-form input {
+  margin: 12px 0;
+  padding: 12px 14px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  outline: none;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+.login-form input:focus {
+  border-color: #2575fc;
+  box-shadow: 0 0 8px rgba(37, 117, 252, 0.3);
+}
+
+/* Button */
+.login-form button {
+  background: #2575fc;
+  color: white;
+  font-size: 1rem;
+  border: none;
+  padding: 12px;
+  margin-top: 18px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.login-form button:hover {
+  background: #1d5edb;
+  transform: translateY(-2px);
+}
+
+/* Register link */
+.register-link {
+  margin-top: 20px;
+  font-size: 0.95rem;
+  color: #555;
+}
+
+.register-link a {
+  color: #2575fc;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.register-link a:hover {
+  text-decoration: underline;
+}

@@ -1,0 +1,340 @@
+/* Profile Card Container */
+.profile-card {
+  background-color: #2c2c2e; /* soft dark gray */
+  padding: 18px;
+  border-radius: 12px;
+  text-align: center;
+  color: #e5e7eb; /* soft white */
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  min-height: 220px;
+}
+
+/* Hover effect */
+.profile-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.25);
+}
+
+/* Highlight recommended matches */
+.profile-card.match {
+  border: 2px solid #facc15; /* soft amber */
+  background-color: #383838; /* slightly lighter gray */
+  animation: pulse 1.5s infinite;
+}
+
+/* Avatar */
+.profile-avatar {
+  width: 75px;
+  height: 75px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 12px;
+  border: 2px solid #94a3b8; /* soft border */
+}
+
+/* User Name */
+.profile-name {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: #f0f0f0;
+}
+
+/* Skills Info */
+.profile-skills {
+  font-size: 0.9rem;
+  margin-bottom: 6px;
+  color: #cbd5e1; /* soft gray-blue */
+}
+
+/* Matching Skills */
+.match-skills {
+  margin-top: 8px;
+  font-weight: bold;
+  color: #facc15; /* soft amber */
+  font-size: 0.85rem;
+}
+
+/* Connect / Chat Button */
+.connect-btn {
+  margin-top: 10px;
+  background-color: #2563eb; /* soothing blue */
+  color: white;
+  padding: 8px 14px;
+  border-radius: 6px;
+  font-weight: bold;
+  width: 100%;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.connect-btn:hover {
+  background-color: #3b82f6; /* lighter blue */
+  transform: translateY(-1px);
+}
+
+/* Pulse animation for recommended matches */
+@keyframes pulse {
+  0%, 100% { box-shadow: 0 0 0 0 rgba(250, 204, 21, 0.5); }
+  50% { box-shadow: 0 0 12px 4px rgba(250, 204, 21, 0.3); }
+}
+
+/* Dashboard Search Input */
+.dashboard-search {
+  width: 50%;
+  max-width: 500px;
+  padding: 10px 15px;
+  border-radius: 8px;
+  border: 1px solid #374151;
+  background-color: #1c0237;
+  color: #e5e7eb;
+  font-size: 16px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+}
+
+.dashboard-search::placeholder {
+  color: #9ca3af;
+}
+
+/* Responsive Grid Layout for Cards - 4 per row */
+.cards-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 cards per row */
+  gap: 20px;
+  margin: 20px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1200px) {
+  .cards-grid {
+    grid-template-columns: repeat(3, 1fr); /* 3 cards per row */
+  }
+}
+
+@media (max-width: 992px) {
+  .cards-grid {
+    grid-template-columns: repeat(2, 1fr); /* 2 cards per row */
+  }
+}
+
+@media (max-width: 600px) {
+  .cards-grid {
+    grid-template-columns: 1fr; /* 1 card per row on small screens */
+  }
+}
+
+/* Smooth scrolling for horizontal overflow (optional for smaller screens) */
+.cards-grid {
+  scroll-behavior: smooth;
+}
+
+.cards-grid::-webkit-scrollbar {
+  height: 8px;
+}
+
+.cards-grid::-webkit-scrollbar-thumb {
+  background-color: #6b7280; /* soft gray */
+  border-radius: 4px;
+}
+
+.cards-grid::-webkit-scrollbar-track {
+  background: #383838;
+}
+/* src/pages/Dashboard.css */
+
+/* Profile Card Container */
+.profile-card {
+  background-color: #2b2b2b; /* soft dark gray */
+  padding: 18px;
+  border-radius: 12px;
+  text-align: center;
+  color: #e5e7eb; /* soft white */
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  min-height: 220px;
+}
+
+/* Hover effect */
+.profile-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.2);
+}
+
+/* Highlight recommended matches */
+.profile-card.match {
+  border: 2px solid #facc15; /* soft amber */
+  background-color: #373636; /* slightly lighter gray */
+}
+
+/* Avatar */
+.profile-avatar {
+  width: 75px;
+  height: 75px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 12px;
+  border: 2px solid #94a3b8; /* soft border */
+}
+
+/* User Name */
+.profile-name {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: #f0f0f0;
+}
+
+/* Skills Info */
+.profile-skills {
+  font-size: 0.9rem;
+  margin-bottom: 6px;
+  color: #cbd5e1; /* soft gray-blue */
+}
+
+/* Matching Skills */
+.match-skills {
+  margin-top: 8px;
+  font-weight: bold;
+  color: #facc15; /* soft amber */
+  font-size: 0.85rem;
+}
+
+/* Connect / Chat Button */
+.connect-btn {
+  margin-top: 10px;
+  background-color: #3b82f6; /* soft blue */
+  color: white;
+  padding: 8px 14px;
+  border-radius: 6px;
+  font-weight: bold;
+  width: 100%;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.connect-btn:hover {
+  background-color: #60a5fa; /* lighter blue */
+  transform: translateY(-1px);
+}
+
+/* Dashboard Search Input */
+.dashboard-search {
+  width: 50%;
+  max-width: 500px;
+  padding: 10px 15px;
+  border-radius: 8px;
+  border: 1px solid #374151;
+  background-color: #1f1f1f;
+  color: #e5e7eb;
+  font-size: 16px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+}
+
+.dashboard-search::placeholder {
+  color: #9ca3af;
+}
+
+/* Grid Layout for Cards - 4 per row */
+.cards-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  margin: 20px;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 1200px) {
+  .cards-grid {
+    grid-template-columns: repeat(3, 1fr); /* 3 per row */
+  }
+}
+
+@media (max-width: 992px) {
+  .cards-grid {
+    grid-template-columns: repeat(2, 1fr); /* 2 per row */
+  }
+}
+
+@media (max-width: 600px) {
+  .cards-grid {
+    grid-template-columns: 1fr; /* 1 per row on mobile */
+  }
+}
+/* Incoming Requests Section */
+.incoming-requests {
+  margin: 20px auto;
+  padding: 20px;
+  max-width: 700px;
+  background: #1e1e1e;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.5);
+  color: #fff;
+}
+
+.incoming-requests h2 {
+  font-size: 1.3rem;
+  font-weight: bold;
+  margin-bottom: 15px;
+  color: #f0f0f0;
+  text-align: center;
+}
+
+.request-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #2a2a2a;
+  padding: 12px 16px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  transition: transform 0.2s;
+}
+
+.request-card:hover {
+  transform: translateY(-2px);
+  background: #333;
+}
+
+.request-card span {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #e0e0e0;
+}
+
+/* Buttons for Accept/Reject */
+.request-card button {
+  padding: 6px 12px;
+  margin-left: 8px;
+  border: none;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.request-card button:first-of-type {
+  background: #4caf50;
+  color: white;
+}
+
+.request-card button:first-of-type:hover {
+  background: #43a047;
+}
+
+.request-card button:last-of-type {
+  background: #e53935;
+  color: white;
+}
+
+.request-card button:last-of-type:hover {
+  background: #d32f2f;
+}
+

@@ -1,0 +1,10 @@
+.home-container {
+  display: flex;
+  flex-direction: column;   /* stack h1 and p vertically */
+  justify-content: center;  /* vertical centering */
+  align-items: center;      /* horizontal centering */
+  height: 100vh;            /* full viewport height */
+  text-align: center;       /* center multi-line text */
+  padding: 0 20px;          /* optional: spacing on small screens */
+  background: #f9f9f9;      /* optional: light background */
+}

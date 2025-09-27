@@ -1,0 +1,66 @@
+/* Smooth hover animations */
+.user-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.user-card:hover {
+  transform: translateY(-8px) scale(1.03);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.35);
+}
+
+/* Star ratings */
+.star {
+  font-size: 1.2rem;
+  color: gold;
+  margin: 0 2px;
+}
+
+/* Skill tags */
+.skill-tag {
+  background: linear-gradient(135deg, #16a34a, #15803d);
+  color: white;
+  padding: 5px 12px;
+  border-radius: 8px;
+  font-size: 0.8rem;
+  font-weight: 500;
+  transition: all 0.2s ease-in-out;
+}
+
+.skill-tag:hover {
+  background: linear-gradient(135deg, #22c55e, #16a34a);
+  transform: scale(1.05);
+}
+
+/* Buttons */
+.connect-btn {
+  background: #22c55e;
+  color: white;
+  font-weight: 600;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.connect-btn:hover {
+  background: #16a34a;
+  transform: translateY(-2px);
+}
+
+.profile-btn {
+  background: transparent;
+  border: 2px solid #22c55e;
+  color: #22c55e;
+  font-weight: 600;
+  padding: 8px 16px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.profile-btn:hover {
+  background: #22c55e;
+  color: white;
+  transform: translateY(-2px);
+}

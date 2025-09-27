@@ -1,0 +1,17 @@
+.about {
+  background: rgba(255, 255, 255, 0.8); /* transparent background */
+  padding: 50px 20px;
+  margin: 50px auto;
+  border-radius: 12px;
+  max-width: 800px;
+  color: #333;
+  text-align: center;
+}
+.about h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+.about p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+}
